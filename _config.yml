@@ -2,9 +2,9 @@
 
 # GENERAL SITE SETTINGS
 # title: This will be displayed as the website's name in your browser tab.
-title: Neumorphism
+title: The Butovsky Lab
 # description: This will be meta HTML tag content. This can be ignored.
-description: Personal website powered by Jekyll
+description: Bioinformatics archive.
 # baseurl: The subpath of your site
 # > set this to "", if you renamed the repository to <user>.github.io
 baseurl: ""
@@ -25,6 +25,7 @@ codepen_username: null
 dev_username: null
 linkedin_username: null
 twitter_username: null
+website: https://butovskylab.bwh.harvard.edu
 
 site:
   bg_img: "assets/img/download.jpeg"
@@ -68,13 +69,13 @@ show_projects_card: true
 # > setting this to false, will omit your listed projects
 show_projects: true
 # projects_title: The will be displayed as the title of your projects
-projects_title: Projects
+projects_title: Research
 # show_os_projects:
 # > setting this to true, will display your public projects on github
 # > setting this to false, will omit your public projects on github
 show_os_projects: true
 # os_projects_title: The will be displayed as the title of your open source projects
-os_projects_title: Open Source Projects
+os_projects_title: Manuscript Repositories
 
 # CONTACT SECTION
 # show_contact_card:
@@ -105,7 +106,9 @@ projects:
     # > setting this to false, will also display forked repositories
     forks: true
     # projects: A list of the repository names you want to exclude from the listing.
-    projects:
+    projects: 
+      - The-Butovsky-Lab.github.io # Exclude website repository
+      - Bulk_RNA_pipeline
     # - repo1-to-be-excluded
     # - repo2-to-be-excluded
 
