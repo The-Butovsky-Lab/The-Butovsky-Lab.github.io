@@ -26,6 +26,9 @@ dev_username: null
 linkedin_username: null
 twitter_username: null
 
+site:
+  bg_img: "assets/img/download.jpeg"
+
 # ABOUT ME SECTION
 # show_aboutme_card:
 # > setting this to true, will display the About Me section
