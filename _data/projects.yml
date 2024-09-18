@@ -13,14 +13,12 @@
 #     - tag: AngularJS
 #     - tag: Node
 
-- name: project X
-  descr: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam"
-  demo: https://example.com/
+- name: Sex-dependent APOE4 neutrophil–microglia interactions drive cognitive impairment in Alzheimer’s disease
+  descr: "To study the role of APOE variants in the regulation of microglial gene activity at the single-cell level, we utilized a cohort of male and female carriers with AD with the APOE ε3/3 and APOE ε3/4 genotypes (Fig. 1a, Extended Data Fig. 1a–g and Supplementary Table 1). Age-matched APOE ε3/3 or APOE ε3/4 cognitively unimpaired carriers were analyzed as healthy control (HC) individuals (Fig. 1a and Supplementary Table 1)."
+  demo: https://www.nature.com/articles/s41591-024-03122-3
   tags:
-    - tag: MongoDB
-    - tag: Express
-    - tag: AngularJS
-    - tag: Node
+    - tag: R
+    - tag: Python
 
 - name: project Y
   descr: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam"
