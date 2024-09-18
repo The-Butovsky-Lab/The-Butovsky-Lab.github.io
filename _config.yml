@@ -27,8 +27,7 @@ linkedin_username: null
 twitter_username: null
 website: https://butovskylab.bwh.harvard.edu
 
-site:
-  bg_img: "assets/img/download.jpeg"
+bg_img: "assets/img/download.jpeg"
 
 # ABOUT ME SECTION
 # show_aboutme_card:
