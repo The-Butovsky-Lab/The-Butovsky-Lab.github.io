@@ -129,3 +129,26 @@ function randomizeOrder() {
   }
   parent.appendChild(frag);
 }
+
+/* Particle words /*
+var particleTexts = ["microglia", "astrocytes", "neutrophils"]; // Your list of texts
+
+function createTextUnderParticles() {
+  const container = document.getElementById('particles-js');
+  
+  particleTexts.forEach((text, index) => {
+    // Create a new span for each word
+    const textElement = document.createElement('span');
+    textElement.innerHTML = text;
+    textElement.style.position = 'absolute';
+    textElement.style.color = '#fff'; // Or customize the color
+    textElement.classList.add('particle-text');
+    
+    // Set random initial positions
+    textElement.style.left = `${Math.random() * container.clientWidth}px`;
+    textElement.style.top = `${Math.random() * container.clientHeight}px`;
+
+    // Append to container
+    container.appendChild(textElement);
+  });
+}
