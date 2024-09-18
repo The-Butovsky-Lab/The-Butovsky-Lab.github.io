@@ -7,8 +7,16 @@ $(document).ready(function() {
     window.scrollTo(0, 0);
   });
 
-  /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-  particlesJS.load('landing', 'assets/particles.json', function() {});
+  // /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+  // particlesJS.load('landing', 'assets/particles.json', function() {});
+
+  // Initialize particles.js
+  particlesJS.load('particles-js', 'assets/particles.json', function() {
+    console.log('Particles.js loaded');
+
+    // Call the function to create the text elements
+    createTextUnderParticles();
+  });
 
   // Typing Text
   var element = document.getElementById('txt-rotate');
