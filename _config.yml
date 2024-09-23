@@ -117,6 +117,34 @@ projects:
 google-analytics:
   id: "UA-158757509-2"
 
+# CONTACT US 
+contact_title: Contact
+contact_subtitle: Reach out to us with any questions, suggestions, or if you're seeking internship opportunities. We're more than happy to discuss!
+
+# POST settings. Added post_ to every variable to not override those defined above for neuromorphism template. 
+post_name: 
+post_author: The Butovsky Lab
+post_url: 
+post_baseurl: ""
+post_resume_site: 
+post_description: 
+post_github_username: The-Butovsky-Lab
+post_github: 
+post_plugins: [jekyll-paginate]
+post_permalink: /:year-:month-:day-:title
+post_paginate: 12
+post_paginate_path: "/page/:num/"
+# exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
+post_highlighter: rouge
+post_markdown: kramdown
+post_comments :
+  gitalk :
+    clientID : 
+    clientSecret : 
+    repo : 
+    owner : 
+    admin : 
+
 ### END OF VALUES YOU SHOULD CHANGE ###
 
 plugins:
