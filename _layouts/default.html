@@ -32,37 +32,52 @@
   </div>
   {% include landing-page.html %}
   <div class="layout">
-    {%if site.show_aboutme_card %}
+    <!-- {%if site.show_aboutme_card %}
       <section class="card neumorphism-card-big">
         {% include section-aboutme.html %}
       </section>
-    {% endif %}
-    {%if site.show_skills_card %}
+    {% endif %} -->
+    <!-- {%if site.show_skills_card %}
       <section class="card neumorphism-card-big">
         {% include section-skills.html %}
       </section>
-    {% endif %}
-    {%if site.show_timeline_card %}
+    {% endif %} -->
+    <!-- {%if site.show_timeline_card %}
       <section class="card neumorphism-card-big">
         {% include section-timeline.html %}
       </section>
-    {% endif %}
+    {% endif %} -->
     {%if site.show_projects_card %}
       <section class="card neumorphism-card-big">
         {% include section-projects.html %}
       </section>
     {% endif %}
 
+    {%if site.show_projects_card %}
     <section class="card neumorphism-card-big">
-      <h2>Latest Posts</h2>
-      <ul class="post-list">
-        {% for post in site.posts limit:5 %}
-          <li class="post-item">
-            <a href="{{ post.url | relative_url}}">{{ post.title }}</a>
-            <p>{{ post.excerpt | truncate: 150 }}</p>
-          </li>
-        {% endfor %}
-      </ul>
+      {% include section-repositories.html %}
+    </section>
+  {% endif %}
+
+    <section class="card neumorphism-card-big">
+      <h1 class="title"><span>Projects</span></h1>
+      <div class="projects-wrapper">
+        <ul class="post-list">
+          {% for post in site.posts limit:5 %}
+            <li class="post-item">
+              <h3><a href="{{ post.url | relative_url}}">{{ post.title }}</a></h3>
+              <!-- <a href="{{ post.url | relative_url}}">{{ post.title }}</a> -->
+              <p>{{ post.abstract | truncate: 150 }}</p>
+              {% if post.gif %}
+              <div style="margin-top: 20px;">
+                <img src="{{ post.gif }}" alt="GIF" style="width:50%; max-width:600px;">
+                
+              </div>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
     </section>
     
     {%if site.show_contact_card %}

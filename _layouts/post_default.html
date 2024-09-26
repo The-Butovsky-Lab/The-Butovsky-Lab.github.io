@@ -22,9 +22,16 @@
 </head>
 
 <body>
-
+  <div id="preloader">
+    <div class="load">
+      <hr />
+      <hr />
+      <hr />
+      <hr />
+    </div>
+  </div>
   <div class="layout">
-    <section class="card neumorphism-card-big">
+    <!-- <section class="card neumorphism-card-big"> -->
 
       <!-- Main Content -->
       <main class="page-content">
@@ -42,16 +49,48 @@
 
           <!-- Social Share & Tags -->
           {% include date_and_social_share.html %}
-          
-          <!-- Post Content -->
-          <div class="post-body">
+
+          <!-- Abstract (mandatory) and gif (optional) are loaded from post file (see header on /_posts/).  -->
+          <section class="card neumorphism-card-big">
+            <h2>Abstract</h2>
+            {% if page.gif %}
+              <div style="display: flex; align-items: flex-start;">
+                <!-- GIF Dynamically Loaded -->
+                <img src="{{ page.gif }}" alt="GIF" style="width:50%; max-width:600px; margin-right: 20px;">
+                
+                <!-- Abstract Text Dynamically Loaded -->
+                <div style="flex: 1;">
+                  <p>{{ page.abstract }}</p>
+                </div>
+              </div>
+            {% else %}
+              <!-- Only Abstract Text If No GIF -->
+              <div>
+                <p>{{ page.abstract }}</p>
+              </div>
+            {% endif %}
             {{ content }}
-          </div>
+
+          </section>
+
+          <!-- Post Content -->
+          <!-- <section class="card neumorphism-card-big">
+            <div class="post-body"> -->
+          
+            <!-- </div>
+          </section> -->
+          
+          <!-- Contact us -->
+          <section class="card neumorphism-card-big">
+            {% include contact.html %}
+          </section>
         </div>
+
       </main>
-  </section>
+  <!-- </section> -->
 
 </div>
+{% include footer.html %}
 </body>
 </html>
 
