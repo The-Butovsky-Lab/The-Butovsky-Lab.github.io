@@ -1032,3 +1032,36 @@ a {
   margin: 0.5em 0;    /* Add some vertical spacing */
   color: $text-color; /* Optional: Change the color */
 }
+
+/* Contributors */
+.contributors-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Adds space between contributors */
+}
+
+.contributor {
+  display: flex;
+  flex-direction: column; /* Stack the avatar and username vertically */
+  align-items: center; /* Center the items horizontally */
+  text-align: center;
+  width: 100px; /* Adjust width if necessary */
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.contributor p {
+  margin-top: 5px; /* Adjust spacing between avatar and username */
+}
+
+/* Horizontal line between posts on home page */
+hr {
+  border: 1px solid $bg-color; /* Light gray line */
+  margin: 2em 0; /* Space above and below the line */
+  width: 100%; /* Full width */
+}
+

@@ -1,0 +1,13 @@
+<body>
+    <div class="contributors-container">
+      {% for contributor in site.data.contributors %}
+      <div class="contributor">
+        <a class="highlight-link" href="{{ contributor.profile_url }}" target="_blank">
+          <img src="{{ contributor.avatar_url }}" alt="{{ contributor.username }}" class="avatar">
+          <p>{{ contributor.username }}</p>
+        </a>
+      </div>      
+      {% endfor %}
+    </div>
+  </body>
+  

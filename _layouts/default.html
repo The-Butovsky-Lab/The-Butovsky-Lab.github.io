@@ -73,15 +73,15 @@
           {% for post in site.posts limit:5 %}
             <h2 class="post-item">           
               <!-- Link to post -->
-              <h3>
+              <h2>
                 <a class="post-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-              </h3>
+              </h2>
               
               <!-- <a href="{{ post.url | relative_url}}">{{ post.title }}</a> -->
               <p>{{ post.abstract | truncate: 300 }}</p>
               {% if post.gif %}
               <div style="margin-top: 20px;">
-                <img src="{{ post.gif }}" alt="GIF" style="width:50%; max-width:600px;">
+                <img src="{{ post.gif }}" alt="GIF" style="width:100%; max-width:500px;">
               </div>
               {% endif %}
               <!-- Link to manuscript -->
@@ -115,9 +115,11 @@
                   {% endfor %}
                 </div>
               {% endif %}
-              
-             
-            </li>
+            </h2>
+             <!-- Add <hr> only if it's not the last post in the list -->
+          {% unless forloop.last %}
+            <hr>
+          {% endunless %}
           {% endfor %}
         </ul>
       </div>
@@ -128,6 +130,11 @@
       {% include section-contact.html %}
     </section>
     {% endif %}
+    
+    <section class="card neumorphism-card-big">
+      <h1 class="title"><span>Contributors</span></h1>
+      {% include contributors.html %}
+    </section>
 
     <section class="card neumorphism-card-big">
       {% include contact.html %}
