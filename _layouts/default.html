@@ -47,33 +47,76 @@
         {% include section-timeline.html %}
       </section>
     {% endif %} -->
-    {%if site.show_projects_card %}
+
+    <!-- Link to post -->
+
+    <!-- {%if site.show_projects_card %}
       <section class="card neumorphism-card-big">
         {% include section-projects.html %}
       </section>
-    {% endif %}
+    {% endif %} -->
 
-    {%if site.show_projects_card %}
+   <!-- Link to repositories -->
+
+    <!-- {%if site.show_projects_card %}
     <section class="card neumorphism-card-big">
       {% include section-repositories.html %}
-    </section>
-  {% endif %}
+    </section> -->
 
+
+  {% endif %}
+    <!-- Adding section to feature posts. -->
     <section class="card neumorphism-card-big">
       <h1 class="title"><span>Projects</span></h1>
       <div class="projects-wrapper">
         <ul class="post-list">
           {% for post in site.posts limit:5 %}
-            <li class="post-item">
-              <h3><a href="{{ post.url | relative_url}}">{{ post.title }}</a></h3>
+            <h2 class="post-item">           
+              <!-- Link to post -->
+              <h3>
+                <a class="post-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+              </h3>
+              
               <!-- <a href="{{ post.url | relative_url}}">{{ post.title }}</a> -->
-              <p>{{ post.abstract | truncate: 150 }}</p>
+              <p>{{ post.abstract | truncate: 300 }}</p>
               {% if post.gif %}
               <div style="margin-top: 20px;">
                 <img src="{{ post.gif }}" alt="GIF" style="width:50%; max-width:600px;">
-                
               </div>
               {% endif %}
+              <!-- Link to manuscript -->
+              {% if post.full_text %}
+                <a class="highlight-link" href="{{ post.full_text }}" target="_blank" rel="noreferrer">
+                  Manuscript
+                </a>
+                {% if post.repo %}
+                  |
+                {% endif %}
+              {% endif %}
+               <!-- Link to repository -->
+              {% if post.repo %}
+                <a class="highlight-link" href="{{ post.repo }}" target="_blank" rel="noreferrer">
+                  GitHub Repository
+                </a>
+              {% else %}
+                <p>No GitHub repository link available.</p>
+              {% endif %}
+              <!-- Coding Tags -->
+              {% if post.tags %}
+                <div class="tag-wrapper">
+                  {% for tag in post.code_tags %}
+                    <span class="home_codetag">{{ tag.tag }}</span>
+                  {% endfor %}
+              {% endif %}
+              <!-- Biology Tags -->
+              {% if post.tags %}
+                  {% for tag in post.bio_tags %}
+                    <span class="home_biotag">{{ tag.tag }}</span>
+                  {% endfor %}
+                </div>
+              {% endif %}
+              
+             
             </li>
           {% endfor %}
         </ul>

@@ -40,12 +40,7 @@
           <!-- <a href="{{ "/" | relative_url }}" class="back-link">{{ site.theme_config.back_home_text }}</a> -->
 
           <!-- Post Title -->
-          <h1 class="post-title">{{ page.title }}</h1>
-
-          <!-- Author and Date
-          <div class="post-meta">
-            <p>{{ page.author | capitalize }} / {{ page.date | date: "%B %Y" }} </p>
-          </div> -->
+          <h1 class="page-title">{{ page.title }}</h1>
 
           <!-- Social Share & Tags -->
           {% include date_and_social_share.html %}
@@ -57,7 +52,6 @@
               <div style="display: flex; align-items: flex-start;">
                 <!-- GIF Dynamically Loaded -->
                 <img src="{{ page.gif }}" alt="GIF" style="width:50%; max-width:600px; margin-right: 20px;">
-                
                 <!-- Abstract Text Dynamically Loaded -->
                 <div style="flex: 1;">
                   <p>{{ page.abstract }}</p>
@@ -69,16 +63,11 @@
                 <p>{{ page.abstract }}</p>
               </div>
             {% endif %}
-            {{ content }}
-
           </section>
 
-          <!-- Post Content -->
-          <!-- <section class="card neumorphism-card-big">
-            <div class="post-body"> -->
-          
-            <!-- </div>
-          </section> -->
+          <section class="card neumorphism-card-big">
+            {{ content }}
+          </section>
           
           <!-- Contact us -->
           <section class="card neumorphism-card-big">

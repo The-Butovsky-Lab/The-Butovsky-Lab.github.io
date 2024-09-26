@@ -44,6 +44,7 @@ h1 {
 }
 
 p {
+  text-align: justify;
   word-spacing: 0.1rem;
 }
 
@@ -64,7 +65,7 @@ a {
 .highlight-link {
   box-shadow: inset 0 -0.125rem 0 $primary-color;
   box-sizing: border-box;
-  color: $primary-color;
+  color: $bg-color;
   display: inline-block;
   padding: 0.125rem 0.125rem;
   transition: all 0.2s ease-in-out;
@@ -940,16 +941,30 @@ a {
   padding: 4em 2em;
 }
 
-.posttag {
+/* Tags on post page */
+.codetag {
   font-family: "Roboto Mono", "Courier New", monospace;
   color: rgb(245, 248, 248);
   padding: 0.4em 1em;
   margin-right: 0.5em;
   border-radius: 1em;
   background-color: rgb(45, 146, 146);
-  font-size: 0.7em;
+  font-size: 0.8em;
   font-weight: bold;
-  text-transform: lowercase;
+  // text-transform: lowercase;
+  //border: 1px solid var(--text-secondary);
+}
+
+.biotag {
+  font-family: "Roboto Mono", "Courier New", monospace;
+  color: rgb(245, 248, 248);
+  padding: 0.4em 1em;
+  margin-right: 0.5em;
+  border-radius: 1em;
+  background-color: rgb(87, 98, 204);
+  font-size: 0.8em;
+  font-weight: bold;
+  // text-transform: lowercase;
   //border: 1px solid var(--text-secondary);
 }
 
@@ -958,4 +973,62 @@ a {
   font-family: $font-family;
   font-size: $font-size-base;
   font-weight: bold;
+}
+
+.post-preview {
+  margin-top: 15px;
+}
+
+.post-preview img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.post-title {
+  color: $bg-color; /* Example color */
+  text-decoration: none; /* Removes underline */
+  font-weight: bold; /* Makes the title bold */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.post-title:hover {
+  color: $text-color; /* Change color on hover */
+  text-decoration: underline; /* Underline on hover */
+}
+
+
+
+/* Tags on post page */
+.home_codetag {
+  font-family: "Roboto Mono", "Courier New", monospace;
+  color: rgb(245, 248, 248);
+  padding: 0.4em 1em;
+  margin-right: 0.5em;
+  border-radius: 1em;
+  background-color: rgb(45, 146, 146);
+  font-size: 0.5em;
+  // font-weight: bold;
+  // text-transform: lowercase;
+  //border: 1px solid var(--text-secondary);
+}
+
+.home_biotag {
+  font-family: "Roboto Mono", "Courier New", monospace;
+  color: rgb(245, 248, 248);
+  padding: 0.4em 1em;
+  margin-right: 0.5em;
+  border-radius: 1em;
+  background-color: rgb(87, 98, 204);
+  font-size: 0.5em;
+  // font-weight: bold;
+  // text-transform: lowercase;
+  //border: 1px solid var(--text-secondary);
+}
+
+.contact_subtitle {
+  font-weight: normal; /* Set font weight to normal */
+  text-align: center;    /* Align text to the left */
+  margin: 0.5em 0;    /* Add some vertical spacing */
+  color: $text-color; /* Optional: Change the color */
 }

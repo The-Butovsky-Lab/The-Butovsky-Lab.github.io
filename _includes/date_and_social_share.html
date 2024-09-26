@@ -19,9 +19,16 @@
   </div>
   
   {% if site.theme_config.show_tags == true %}
-  <div class="">
-    {% for tag in page.tags %}
-    <span class="posttag">{{ tag }}</span>
+  <div class="tag-wrapper">
+    {% for tag in page.code_tags %}
+    <span class="codetag">{{ tag}}</span>
+    {% endfor %}
+  </div>
+
+
+  <div class="tag-wrapper">
+    {% for tag in page.bio_tags %}
+    <span class="biotag">{{ tag}}</span>
     {% endfor %}
   </div>
 {% endif %}

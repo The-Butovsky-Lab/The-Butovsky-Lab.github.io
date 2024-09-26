@@ -119,7 +119,7 @@ google-analytics:
 
 # CONTACT US 
 contact_title: Contact
-contact_subtitle: Reach out to us with any questions, suggestions, or if you're seeking internship opportunities. We're more than happy to discuss!
+contact_subtitle: Reach out to us with any questions, suggestions, or if you're seeking internship opportunities. 
 
 # POST settings. Added post_ to every variable to not override those defined above for neuromorphism template. 
 theme_config:
