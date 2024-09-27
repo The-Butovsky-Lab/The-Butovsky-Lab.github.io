@@ -12,6 +12,7 @@ $font-family: "Inconsolata", sans-serif;
 $font-family-numbers: "Inconsolata", sans-serif;
 $font-size-base: 1rem !default;
 $font-size-h1: 2rem !default;
+$font-size-lab: 3rem !default;
 $font-weight-strong: 600;
 $text-color: #fff !default;
 $bg-color: rgb(31,36,42);
@@ -60,6 +61,7 @@ a {
 .highlight-title {
   color: $text-color;
   text-shadow: 0.1rem 0.1rem 0.1rem $text-color;
+  font-size: 5rem
 }
 
 .highlight-link {
