@@ -14,10 +14,10 @@ $font-size-base: 1rem !default;
 $font-size-h1: 2rem !default;
 $font-size-lab: 3rem !default;
 $font-weight-strong: 600;
-$text-color: #fff !default;
-$bg-color: rgb(31,36,42);
+$text-color: #101224 !default;
+$bg-color: rgb(2, 29, 63);
 $bg-img: url('https://assets.technologynetworks.com/production/dynamic/images/content/373340/immune-cells-of-the-brain-are-not-all-the-same-373340-960x540.jpg?cb=12292295');
-$card-bg-color:  rgb(131,175,190);
+$card-bg-color:  rgb(241, 240, 220);
 $primary-color: rgb(131,175,190);
 
 /* General */
@@ -42,6 +42,7 @@ h1 {
   font-size: $font-size-h1;
   font-weight: $font-weight-strong;
   line-height: 2rem;
+  color: rgb(241, 240, 220);
 }
 
 p {
@@ -59,9 +60,15 @@ a {
 }
 
 .highlight-title {
-  color: $text-color;
-  text-shadow: 0.1rem 0.1rem 0.1rem $text-color;
+  color: rgb(241, 240, 220);
+  text-shadow: 0.1rem 0.1rem 0.1rem rgb(241, 240, 220);
   font-size: 5rem
+}
+
+.highlight-subtitle {
+  color: rgb(241, 240, 220);
+  text-shadow: 0.1rem 0.1rem 0.1rem rgb(241, 240, 220);
+  font-size: 2rem
 }
 
 .highlight-link {
@@ -975,6 +982,7 @@ a {
   font-family: $font-family;
   font-size: $font-size-base;
   font-weight: bold;
+  color: rgb(241, 240, 220);
 }
 
 .post-preview {
@@ -997,6 +1005,13 @@ a {
 .post-title:hover {
   color: $text-color; /* Change color on hover */
   text-decoration: underline; /* Underline on hover */
+}
+
+.within-post-title {
+  color: $card-bg-color; /* Example color */
+  text-decoration: none; /* Removes underline */
+  font-weight: bold; /* Makes the title bold */
+  transition: color 0.3s; /* Smooth transition for hover effect */
 }
 
 
