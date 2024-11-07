@@ -10,11 +10,11 @@ gif: "/assets/img/CellDimPlot3D.gif"
 code_tags: [R, python]
 bio_tags: [microglia, neutrophils, Alzheimer's disease, human, snRNAseq]
 ---
-<div class="post-body">
+<!-- <div class="post-body">
     <h2>Data Exploration</h2>
     <iframe src="https://imev2023.shinyapps.io/APOE34-33-Microglia/" width="100%" height="600px" frameborder="0" scrolling="auto"></iframe>
     <p>Note: If the Shiny app doesn’t load, please check your network connection or try refreshing the page.</p>
-</div>
+</div> -->
 <div class="post-body">
     <h2>Data Availability</h2>
     <p> Our snRNA-sequencing data is available under https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE260461. </p>
